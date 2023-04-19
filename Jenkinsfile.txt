@@ -20,7 +20,7 @@ pipeline {
         }
      stage ('Create Container') {
      steps {
-             sh "docker run -d -p --name=webserver01 8888:8080 rukesh2devops/openshifts2i:latest"
+             sh "docker run -d -p 8888:8080 --name=webserver01 rukesh2devops/openshifts2i:latest"
 }
 }    
 }
